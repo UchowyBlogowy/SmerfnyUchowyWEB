@@ -4,110 +4,221 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dziennik Smerfowy Elbląg</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    body { margin: 0; }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icon.png">
+  <meta name="icon" content="icon.png">
 </head>
-<body class="bg-sky-50 text-gray-900">
+<body>
 
   <!-- header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-02xl md:text-3xl font-bold text-gray-900 tracking-tight">
-        Dziennik Animatorów Elbląg
-      </h1>
-      <nav class="space-x-6 hidden md:flex text-gray-700 font-medium">
-        <a href="#art1" class="hover:text-sky-600 transition-colors duration-200">Aktualności</a>
-        <a href="https://pogoda.interia.pl/prognoza-dlugoterminowa-elblag,cId,7446" class="hover:text-sky-600 transition-colors duration-200">Pogoda Elbląg</a>
-        <a href="#art2" class="hover:text-sky-600 transition-colors duration-200">Kultura</a>
-        <a href="#art4" class="hover:text-sky-600 transition-colors duration-200">Kontakt</a>
+  <header class="site-header">
+    <div class="container header-inner">
+<h1 class="site-title" style="display:inline-block; vertical-align:middle;">
+  <img src="icon.png" alt="Logo" style="height:50px; margin-right:8px; vertical-align:middle;">
+  Dziennik Animatorów Elbląg
+</h1>
+      <nav class="nav-menu">
+        <a href="#art1">Aktualności</a>
+        <a href="https://pogoda.interia.pl/prognoza-dlugoterminowa-elblag,cId,7446">Pogoda Elbląg</a>
+        <a href="#art2">Kultura</a>
+        <a href="#art4">Kontakt</a>
       </nav>
     </div>
   </header>
-
-  <!-- main content -->
-  <main class="pt-24">
-    <!-- artykuł 3 --->
-    <section id="art3" class="min-h-[60vh] grid md:grid-cols-2">
-      <div class="relative">
-        <img src="https://placekitten.com/800/600" alt="Przykładowy artykuł" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-sky-900/40"></div>
-      </div>
-      <div class="flex items-center justify-center p-10 bg-white shadow-lg">
-        <div class="max-w-lg">
-          <h1 class="text-4xl font-extrabold text-sky-900">Kolejny artykuł</h1>
-          <h2 class="mt-3 text-xl font-semibold text-sky-700">Podtytuł artykułu</h2>
-          <h2>03.09.2025</h2>
-          <p class="mt-6 text-gray-700 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar justo sit amet erat tincidunt, ac tincidunt lorem porttitor.
-          </p>
-        </div>
-      </div>
-    </section>
-    <br>
     <!-- artykuł 1 -->
-    <section id="art1" class="min-h-[80vh] grid md:grid-cols-2">
-      <div class="relative">
-        <img src="https://static.olsztyn.com.pl/static/articles_photos/40/40811/3323a1234da4dc1e62cf063eab9828ff_720.jpg" alt="Wioska Smerfów" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-sky-900/40"></div>
+    <section id="art1" class="article">
+      <div class="article-image">
+        <img src="https://static.olsztyn.com.pl/static/articles_photos/40/40811/3323a1234da4dc1e62cf063eab9828ff_720.jpg" alt="Wioska Smerfów">
+        <div class="overlay"></div>
       </div>
-      <div class="flex items-center justify-center p-10 bg-white shadow-lg">
-        <div class="max-w-lg">
-          <h1 class="text-4xl font-extrabold text-sky-900">Smerfy w Elblągu</h1>
-          <h2 class="mt-3 text-xl font-semibold text-sky-700">Życie codzienne Smerfów</h2>
-          <h2>03.09.2025</h2>
-          <p class="mt-6 text-gray-700 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar justo sit amet erat tincidunt, ac tincidunt lorem porttitor.
+      <div class="article-text">
+        <div class="text-wrapper">
+          <h1>UWAGA RODZICE!</h1>
+          <h2 class="subtitle">Ostrzegamy Rodziców!</h2>
+          <h2 class="date">03.09.2025</h2>
+          <p>
+            Po mieście Elbląg krąży pewien animator, fanatyk Smerfów, który wciąga dzieci w swoje zabawy. A tak naprawdę to Gargamel przebrany za animatora, który zaprasza dzieci do swojego domu. Ostrzegamy rodziców! Osobnik ten został też zauważony w przebraniu jednorożca oraz Smerfetki! PILNUJCIE SWOICH POCIECH!
           </p>
         </div>
       </div>
     </section>
 <br>
-    <!-- artykuł 2 -->
-    <section id="art2" class="min-h-[80vh] grid md:grid-cols-2">
-      <div class="relative">
-        <img src="https://media.tenor.com/65bnpFgzR78AAAAe/samotny-smerf-%C5%82ukasz-g%C3%B3lski.png" alt="Animator Smerf" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-sky-900/40"></div>
+<!-- artykuł 4 -->
+<section id="art4" class="article">
+  <div class="article-image">
+    <img src="https://radioolsztyn.pl/wp-content/uploads/2022/01/Powitanie-Nowego-Roku-Fot.-J.-Sulecki.jpg" alt="Stare Miasto Elbląg">
+    <div class="overlay"></div>
+  </div>
+  <div class="article-text">
+    <div class="text-wrapper">
+      <h1>Spacer po Starym Mieście</h1>
+      <h2 class="subtitle">Elbląg pełen historii</h2>
+      <h2 class="date">27.08.2025</h2>
+      <p>
+        Stare Miasto w Elblągu odzyskuje dawny blask. Turyści i mieszkańcy chętnie spacerują wąskimi uliczkami, odkrywając klimatyczne knajpki i zabytkowe kamienice. 
+        W ostatni weekend odbyła się także parada animatorów z kolorowymi balonami, które dodawały uroku całej starówce.
+      </p>
+    </div>
+  </div>
+</section>
+<br> 
+<!-- artykuł 5 -->
+<section id="art5" class="article">
+  <div class="article-image">
+    <img src="https://media.krakow.travel/photos/38133/xl.jpg" alt="Balonowe niebo nad Elblągiem">
+    <div class="overlay"></div>
+  </div>
+  <div class="article-text">
+    <div class="text-wrapper">
+      <h1>Festiwal Balonów w Elblągu</h1>
+      <h2 class="subtitle">Kolory nad miastem</h2>
+      <h2 class="date">13.08.2025</h2>
+      <p>
+        Nad Elblągiem zawisły setki balonów – zarówno gorącego powietrza, jak i klasycznych balonów do dmuchania. 
+        Impreza przyciągnęła całe rodziny, a dzieci mogły brać udział w konkursach na największy i najdziwniejszy balon. 
+        Organizatorzy zapowiadają, że w przyszłym roku wydarzenie będzie jeszcze większe.
+      </p>
+    </div>
+  </div>
+</section>
+<br> 
+<!-- artykuł 7 -->
+<section id="art7" class="article">
+  <div class="article-image">
+    <img src="https://doba.pl/media/powiaty/wroclaw/articles/images/25621/doba_pl_82821-9fed5562a49b81ba20863c81bf03a859_1280x720.jpg" alt="Balonowa parada w Elblągu">
+    <div class="overlay"></div>
+  </div>
+  <div class="article-text">
+    <div class="text-wrapper">
+      <h1>Balonowa Parada Animatorów</h1>
+      <h2 class="subtitle">Radość na ulicach miasta</h2>
+      <h2 class="date">01.08.2025</h2>
+      <p>
+        Ulicami Elbląga przeszła barwna parada z setkami balonów. Animatorzy rozdawali dzieciom zwierzątka z baloników, 
+        a nad głowami uczestników unosiły się ogromne balony w kształcie serc i gwiazd. 
+        Wydarzenie zakończył pokaz fajerwerków oraz wspólne wypuszczenie balonów w niebo.
+      </p>
+    </div>
+  </div>
+</section>
+<br> 
+    <!-- artykuł 8 -->
+    <section id="art8" class="article">
+      <div class="article-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfSUL-lWE18Hqr_1cbWxBaq7hON6lFGm975Q&s" alt="Animator prowadzi zabawę">
+        <div class="overlay"></div>
       </div>
-      <div class="flex items-center justify-center p-10 bg-white shadow-lg">
-        <div class="max-w-lg">
-          <h1 class="text-4xl font-extrabold text-sky-900">Animator na Przegranej Pozycji</h1>
-          <h2 class="mt-3 text-xl font-semibold text-sky-700">Życie Animatora</h2>
-          <h2>03.09.2025</h2>
-          <p class="mt-6 text-gray-700 leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar justo sit amet erat tincidunt, ac tincidunt lorem porttitor.
+      <div class="article-text">
+        <div class="text-wrapper">
+          <h1>Animatorzy w Parku Dolinka</h1>
+          <h2 class="subtitle">Warsztaty i zabawy dla dzieci</h2>
+          <h2 class="date">14.07.2025</h2>
+          <p>
+            Park Dolinka zamienił się w wioskę Smerfów. Animatorzy przygotowali teatrzyk, 
+            wspólne malowanie oraz konkursy wiedzy o Elblągu. 
+            Nie zabrakło też występu Gargamela, który próbował „przechwycić” niebieskich bohaterów.
           </p>
         </div>
       </div>
     </section>
-
-  </main>
-
-  <!-- footer -->
-  <footer class="bg-gray-100 text-gray-700 border-t border-gray-200 mt-12">
-    <div class="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-3 gap-6">
-      <div>
-        <h2 class="font-bold text-gray-900 mb-2">Dziennik Animatorów Elbląg</h2>
-        <p class="text-sm">© 2025 Wszelkie prawa zastrzeżone</p>
+<br> 
+    <!-- artykuł 9 -->
+    <section id="art9" class="article">
+      <div class="article-image">
+        <img src="https://gdziewpolscenaweekend.pl/wp-content/uploads/2019/06/def_1_1.jpg" alt="Smerfowe wydarzenie w Elblągu">
+        <div class="overlay"></div>
+      </div>
+      <div class="article-text">
+        <div class="text-wrapper">
+          <h1>Smerfny Piknik nad Kanałem Elbląskim</h1>
+          <h2 class="subtitle">Atrakcje na świeżym powietrzu</h2>
+          <h2 class="date">09.07.2025</h2>
+          <p>
+            Nad Kanałem Elbląskim odbył się piknik rodzinny z udziałem Smerfów i animatorów. 
+            Były dmuchańce, zawody sportowe i wspólne śpiewanie piosenek. 
+            Pogoda dopisała, a błękitne przebrania idealnie wpasowały się w klimat imprezy.
+          </p>
+        </div>
+      </div>
+    </section>
+<br> 
+    <!-- artykuł 10 -->
+    <section id="art10" class="article">
+      <div class="article-image">
+        <img src="https://d-art.ppstatic.pl/kadry/k/r/c5/2d/59350db203bc9_o_medium.jpg" alt="Animatorzy i Smerfy na scenie">
+        <div class="overlay"></div>
+      </div>
+      <div class="article-text">
+        <div class="text-wrapper">
+          <h1>Smerfy na Scenie w Teatrze</h1>
+          <h2 class="subtitle">Spektakl dla całych rodzin</h2>
+          <h2 class="date">10.06.2025</h2>
+          <p>
+            W elbląskim teatrze odbyło się przedstawienie pt. „Smerfy w krainie marzeń”. 
+            Animatorzy w barwnych kostiumach zabrali publiczność w magiczną podróż pełną humoru, muzyki i przygód.
+          </p>
+        </div>
+      </div>
+    </section>
+<br> 
+    <!-- artykuł 11 -->
+    <section id="art11" class="article">
+      <div class="article-image">
+        <img src="https://d-art.ppstatic.pl/kadry/k/r/00/c5/5877d9bc532d7_o_full.jpg" alt="Smerfy z dziećmi w Elblągu">
+        <div class="overlay"></div>
+      </div>
+      <div class="article-text">
+        <div class="text-wrapper">
+          <h1>Dzień ze Smerfami</h1>
+          <h2 class="subtitle">Edukacja i zabawa</h2>
+          <h2 class="date">01.06.2025</h2>
+          <p>
+            W ramach miejskiego programu kulturalnego animatorzy przygotowali „Dzień ze Smerfami”. 
+            W szkołach i przedszkolach pojawili się bajkowi bohaterowie, 
+            którzy opowiadali o przyjaźni, pomocy innym i wspólnym działaniu.
+          </p>
+        </div>
+      </div>
+    </section>
+<br>
+<div style="text-align: center; margin: 20px 0;">
+  <b>
+    <a>
+      Wczytuje Starsze
+      <span id="loading-dots">
+        <span>.</span><span>.</span><span>.</span>
+      </span>
+    </a>
+  </b>
+  <script>
+    const dots = document.querySelectorAll('#loading-dots span');
+    let active = 0;
+    setInterval(() => {
+      dots.forEach((dot, i) => dot.style.opacity = i === active ? '1' : '0.3');
+      active = (active + 1) % dots.length;
+    }, 400);
+  </script>
+</div>
+<!-- footer -->
+<footer class="site-footer"></footer>
+  <div class="container footer-grid">
+    <div>
+      <h2 class="footer-
+        <p class="small">© 2025 Wszelkie prawa zastrzeżone</p>
       </div>
       <div>
-        <h3 class="font-semibold mb-2">Menu</h3>
-        <ul class="space-y-1">
-          <li><a href="#art1" class="hover:text-sky-600">Aktualności</a></li>
-          <li><a href="https://pogoda.interia.pl/prognoza-dlugoterminowa-elblag,cId,7446" class="hover:text-sky-600">Pogoda</a></li>
-          <li><a href="#art2" class="hover:text-sky-600">Kultura</a></li>
-          <li><a href="#art4" class="hover:text-sky-600">Kontakt</a></li>
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#art1">Aktualności</a></li>
+          <li><a href="https://pogoda.interia.pl/prognoza-dlugoterminowa-elblag,cId,7446">Pogoda</a></li>
+          <li><a href="#art2">Kultura</a></li>
+          <li><a href="#art4">Kontakt</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="font-semibold mb-2">Kontakt</h3>
-        <p class="text-sm">email: kontakt@smerfowyuchowy.pl</p>
-        <p class="text-sm">tel: 992</p>
-        <div class="flex space-x-3 mt-2">
-          <a href="#" class="hover:text-sky-600">Facebook</a>
-          <a href="#" class="hover:text-sky-600">Twitter</a>
+        <h3>Kontakt</h3>
+        <p class="small">email: redakcja@dziennikanimatorowelblag.pl</p>
+        <div class="socials">
         </div>
       </div>
     </div>
