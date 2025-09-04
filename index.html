@@ -189,7 +189,7 @@
 <br>
 <div style="text-align: center; margin: 20px 0;">
   <b>
-    <a>
+    <a id="loading-text">
       Wczytuje Starsze
       <span id="loading-dots">
         <span>.</span><span>.</span><span>.</span>
@@ -199,12 +199,21 @@
   <script>
     const dots = document.querySelectorAll('#loading-dots span');
     let active = 0;
-    setInterval(() => {
+    const interval = setInterval(() => {
       dots.forEach((dot, i) => dot.style.opacity = i === active ? '1' : '0.3');
       active = (active + 1) % dots.length;
     }, 400);
+
+    // Zmiana na "Server Error" po najechaniu myszką na kropki
+    const loadingDots = document.getElementById('loading-dots');
+    loadingDots.addEventListener('mouseenter', () => {
+      clearInterval(interval);
+      const loadingText = document.getElementById('loading-text');
+      loadingText.innerHTML = '<span style="color: red;">Server Error 403</span>';
+    });
   </script>
 </div>
+
 <!-- footer -->
 <footer class="site-footer" id="site-footer"></footer>
   <div class="container footer-grid">
