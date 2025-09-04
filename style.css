@@ -17,7 +17,7 @@ body {
 .site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  background: linear-gradient(135deg, #66b7e0 0%, #638cce 50%, #8498dc 100%);
+  background: #fafdff; /* sky-950 */
   border-bottom: 1px solid #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   z-index: 50;
@@ -39,12 +39,12 @@ body {
   font-weight: 500;
 }
 .nav-menu a {
-  color: #141e2f;
+  color: #021843;
   text-decoration: none;
   transition: color 0.2s;
 }
 .nav-menu a:hover {
-  color: #8b8b8b82;
+  color: #556db6a3;
   transition: color 0.2s;
 }
 
@@ -78,7 +78,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #b6d6e2;
+  background: #ffffff;
   padding: 2.5rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
