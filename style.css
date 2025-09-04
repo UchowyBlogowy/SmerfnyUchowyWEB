@@ -2,7 +2,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #f0f9ff; /* sky-50 */
+  background: #f4f4f4; /* sky-50 */
   color: #111827;      /* gray-900 */
 }
 
@@ -17,9 +17,9 @@ body {
 .site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background: linear-gradient(135deg, #66b7e0 0%, #638cce 50%, #8498dc 100%);
+  border-bottom: 1px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   z-index: 50;
 }
 .header-inner {
@@ -39,12 +39,13 @@ body {
   font-weight: 500;
 }
 .nav-menu a {
-  color: #374151;
+  color: #141e2f;
   text-decoration: none;
   transition: color 0.2s;
 }
 .nav-menu a:hover {
-  color: #0284c7;
+  color: #8b8b8b82;
+  transition: color 0.2s;
 }
 
 /* Main spacing */
@@ -64,19 +65,20 @@ body {
 .article-image img {
   width: 100%;
   height: 100%;
+  box-shadow: #111827 0 4px 6px -1px, #00000074 0 10px 6px -2px;
   object-fit: cover;
   display: block;
 }
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(12, 74, 110, 0.4); /* sky-900/40 */
+  background: rgba(12, 74, 110, 0.163); /* sky-900/40 */
 }
 .article-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: #b6d6e2;
   padding: 2.5rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
